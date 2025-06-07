@@ -1,0 +1,1 @@
+lm_eval   --model hf   --model_args pretrained=meta-llama/Llama-2-7b-hf,peft=../../../output/alpaca-gpt4_20000_fedavg_c20s2_i10_b16a1_l512_r32a64_20250523232123/checkpoint-200,load_in_8bit=True,trust_remote_code=True   --tasks mmlu   --device cuda:0   --batch_size 4   --output_path results/llama7b_lora_full_eval.json
